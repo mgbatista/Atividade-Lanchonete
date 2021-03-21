@@ -11,23 +11,35 @@ namespace Util
 {
     public class ConnectionDB : IDisposable //é o responsável pela abertura da conexão com o Banco de Dados
     {
-        private SqlConnection conn;
-        private static ConnectionDB _instance;
+        private SqlConnection _conn;
+        //private static ConnectionDB _instance;
 
-        private ConnectionDB()
+        public ConnectionDB()
         {
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConexaoSQLServer"].ConnectionString);
-            conn.Open();
+            _conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConexaoSQLServer"].ConnectionString);
+            _conn.Open();
         }
 
-        public static ConnectionDB GetConnection()
+        public bool ExecQuery(string query)
+        {
+            var cmd = new SqlCommand
+            {
+                CommandText = query,
+                CommandType = CommandType.Text,
+                Connection = _conn
+            };
+            return (cmd.ExecuteNonQuery() == 1) ? true : false;
+
+        }
+
+       /* public static ConnectionDB GetConnection()
         {
             if (_instance == null)
                 _instance = new ConnectionDB();
             return _instance;
-        }
+        }*/
 
-        public void ExecQuery(string query)
+        /*public void ExecQuery(string query)
         {
             var cmd = new SqlCommand
             {
@@ -36,23 +48,21 @@ namespace Util
                 Connection = conn
             };
             cmd.ExecuteNonQuery();
-        }
+        }*/
 
         public SqlDataReader ExecQueryReturn(string query)
         {
-            var cmd = new SqlCommand(query, conn);
+            var cmd = new SqlCommand(query, _conn);
             return cmd.ExecuteReader();
-
-
         }
 
         public void Dispose()
         {
-            if (conn.State == ConnectionState.Open)
+            if (_conn.State == ConnectionState.Open)
             {
-                conn.Close();
-                _instance = null;
-
+                _conn.Close();
+                //_instance = null;
+                _conn.Dispose();
             }
         }
     }
