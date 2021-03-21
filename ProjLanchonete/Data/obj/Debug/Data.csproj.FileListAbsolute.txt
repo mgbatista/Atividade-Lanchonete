@@ -1,0 +1,11 @@
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\bin\Debug\Data.dll
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\bin\Debug\Data.pdb
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\bin\Debug\Model.dll
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\bin\Debug\Util.dll
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\bin\Debug\Model.pdb
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\bin\Debug\Util.pdb
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\obj\Debug\Data.dll
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Data\obj\Debug\Data.pdb

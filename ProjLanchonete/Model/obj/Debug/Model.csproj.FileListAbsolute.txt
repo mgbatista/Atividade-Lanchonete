@@ -1,0 +1,6 @@
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Model\bin\Debug\Model.dll
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Model\bin\Debug\Model.pdb
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Model\obj\Debug\Model.dll
+C:\Aulas HTML André\Atividade-Lanchonete\ProjLanchonete\Model\obj\Debug\Model.pdb
